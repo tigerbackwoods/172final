@@ -9,7 +9,9 @@ angular.module('todoService', [])
 			},
 			create : function(todoData) {
 				return $http.post('/api/todos', todoData);
-			}
-
+			},
+		        delete : function(todoDelete) {
+			        return $http.del('/api/todos', todoDelete);
+         		   } 
 		}
 	}]);

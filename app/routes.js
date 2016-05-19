@@ -1,4 +1,5 @@
-var Todo = require('./models/todo');
+//var Todo = require('./models/todo');
+var Todo = require('./models/todo').Todo;
 
 function getTodos(res){
 	Todo.find(function(err, todos) {
